@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="Benvenuto sul sito di orizon rp | Stai cercando un server roleplay serio e divertente? Sei nel posto giusto! Entra a giocare ora!">
+    <meta name="keywords" content="Orizon, RP, Roleplay, fivem, gtav, whitelist, Orizonrp, italiano,">
+    <meta name="author" content="SPSchannel">
+
+    <title>Orizon Roleplay | Home</title>
+
+    <link rel="icon" type="image/x-icon" href="https://orizonrp.com/img/logo-orizon.ico">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="home.css">
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+
+<div class="header">
+    <div class="logo reveal">
+        <img src="https://cdn.discordapp.com/attachments/1006307815679336519/1006308502970572830/logo.png" alt="Orizon-Logo" width="95" height="95" title="orizon rp">
+    </div>
+    <ul class="menu">
+        <li><a class="home"><span class="sottolinea-home">Home</span></a></li>
+    </ul>
+    <div class="cta">
+        <!-- <a href="fivem://connect/cfx.re/join/y83mj5" class="button">Connettiti</a> -->
+        <a href="https://discord.gg/RPHrWgur2m" class="button">Discord</a>
+    </div>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+
+
+<div class="hero">
+    <div class="bg"></div>
+    <div class="hero__content reveal">
+        <h1 class="big-text">SkyRoleplay</h1>
+        <a href="" class="typewrite" data-period="2000" data-type='["Najbolji RP.", "Odlican FPS.", "Odlicne Skripte."]'>
+     <span class="wrap"></span>
+    </a>
+        <script>
+            var TxtType = function(el, toRotate, period) {
+                this.toRotate = toRotate;
+                this.el = el;
+                this.loopNum = 0;
+                this.period = parseInt(period, 10) || 500;
+                this.txt = '';
+                this.tick();
+                this.isDeleting = false;
+            };
+
+            TxtType.prototype.tick = function() {
+                var i = this.loopNum % this.toRotate.length;
+                var fullTxt = this.toRotate[i];
+
+                if (this.isDeleting) {
+                    this.txt = fullTxt.substring(0, this.txt.length - 1);
+                } else {
+                    this.txt = fullTxt.substring(0, this.txt.length + 1);
+                }
+
+                this.el.innerHTML = '<span class="wrap reveal">' + this.txt + '</span>';
+
+                var that = this;
+                var delta = 200 - Math.random() * 100;
+
+                if (this.isDeleting) {
+                    delta /= 2;
+                }
+
+                if (!this.isDeleting && this.txt === fullTxt) {
+                    delta = this.period;
+                    this.isDeleting = true;
+                } else if (this.isDeleting && this.txt === '') {
+                    this.isDeleting = false;
+                    this.loopNum++;
+                    delta = 500;
+                }
+
+                setTimeout(function() {
+                    that.tick();
+                }, delta);
+            };
+
+            window.onload = function() {
+                var elements = document.getElementsByClassName('typewrite');
+                for (var i = 0; i < elements.length; i++) {
+                    var toRotate = elements[i].getAttribute('data-type');
+                    var period = elements[i].getAttribute('data-period');
+                    if (toRotate) {
+                        new TxtType(elements[i], JSON.parse(toRotate), period);
+                    }
+                }
+                // INJECT CSS
+                var css = document.createElement("style");
+                css.type = "text/css";
+                css.innerHTML = ".typewrite > .wrap {border-right: 0.15em solid #9e9d9d }";
+                document.body.appendChild(css);
+            };
+        </script>
+        <a href="https://cdn.discordapp.com/attachments/1006307815679336519/1006308502970572830/logo.png" class="button">Udjite na nas discord</a>
+    </div>
+    <video src='img/logo.webm' width="680px" height="630px" class="logo-ori zoom" autoplay muted loop/>
+</div>
+<div class="annunci">
+    <p class="title"><i class="fa fa-bullhorn" aria-hidden="true"></i>SkyRoleplay</p>
+    <p class="text">Najbolji balkanski fivem roleplay server!
+        <nav>
+            <ul>
+                <li>
+                    <p><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Odlicne i unikatne skripte</p>
+                </li>
+                <li>
+                    <p><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Nema whiteliste</p>
+                </li>
+                <li>
+                    <p><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Odlcina optimizacija skripti!</p>
+                </li>
+            </ul>
+        </nav>
+</div>
+
+<div class="info">
+    <div class="server">
+
+    </div>
+    <div class="server2">
+        <h1 class="serverinfo2 reveal">SKY ROLEPLAY</h1>
+        <div class="col-md-3">
+            <span id="count1" class="display-4">48</span>
+            <p>Slotova</p>
+        </div>
+        <div class="col-md-3">
+            <span id="count2" class="display-4">20+</span>
+            <p>Stafa</p>
+        </div>
+        <div class="col-md-3">500+</span>
+            <p>Discord membera</p>
+        </div>
+    </div>
+</div>
+
+<div class="staff">
+    <h2 class="reveal">Server Staff</h2>
+</div>
+
+<div class="grid zoom">
+    <div class="col reveal">
+        <h5 class="founder1">Kimmy</h5>
+        <p class="subtitle1">Vlasnik</p>
+    </div>
+    <div class="col reveal">
+        <h5 class="cofounder1">Makelinho</h5>
+        <p class="subtitle2">Su-vlasnik</p>
+    </div>
+    <div class="col reveal">
+        <h5 class="superadmin1">Mateja</h5>
+        <p class="subtitle3">Assistent </p>
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-bottom zoom">
+        <p>Copyright &copy; 2022 Sky Roleplay - Powered by Toni.Dev</p>
+    </div>
+</footer>
+
+<!-- Jquery -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+
+        /* Open Panel */
+        $(".hamburger").on('click', function() {
+            $(".menu").toggleClass("menu--open");
+        });
+
+    });
+
+    ScrollReveal().reveal('.reveal', {
+        distance: '90px',
+        duration: 1500,
+        easing: 'cubic-bezier(.215, .61, .335, 1)',
+        invterval: 600
+    });
+    ScrollReveal().reveal('.zoom', {
+        duration: 1500,
+        easing: 'cubic-bezier(.215, .61, .335, 1)',
+        invterval: 200,
+        scale: 0.65
+    });
+</script>
+
+
+
+</body>
+
+</html>
